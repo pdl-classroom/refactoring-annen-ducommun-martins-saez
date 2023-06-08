@@ -25,7 +25,7 @@ class OrdersWriterTest {
     }
 
     @Test
-    public void TwoOrders() {
+    void TwoOrders() {
         orders.AddOrder(new Order(222));
         String order111Json = JsonOrder111WithProduct("");
         String order222Json = "{\"id\": 222, \"products\": []}";
