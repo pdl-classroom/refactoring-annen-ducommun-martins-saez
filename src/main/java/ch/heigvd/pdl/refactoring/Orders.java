@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Orders {
 
-    private List<Order> ordersList = new ArrayList<Order>();
+    private List<Order> ordersList = new ArrayList<>();
 
     public void addOrder(Order order) {
         ordersList.add(order);
