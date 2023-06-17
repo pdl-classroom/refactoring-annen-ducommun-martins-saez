@@ -3,7 +3,7 @@ package ch.heigvd.pdl.refactoring;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ProductTest {
+class ProductTest {
     Product product = new Product("Carpet", ProductColor.BLUE, ProductSize.XXL, 13.37, "TRY");
     @Test
     void ProductColor() {
