@@ -50,4 +50,27 @@ class OrdersWriterTest {
         return "{\"id\": 111, \"products\": [" + productJson + "]}";
     }
 
+    @Test
+    void ProductColor() {
+        Product p = new Product("Plane", ProductColor.RED, ProductSize.INVALID_SIZE, 99.00, "TRY");
+        assertEquals(ProductColor.RED, p.getColor());
+    }
+
+    @Test
+    void ProductColorValue() {
+        Product p = new Product("Plane", ProductColor.RED, ProductSize.INVALID_SIZE, 99.00, "TRY");
+        assertEquals("red", p.getColor().toString());
+    }
+
+    @Test
+    void ProductSize() {
+        Product p = new Product("Carpet", ProductColor.BLUE, ProductSize.XXL, 13.37, "TRY");
+        assertEquals(ProductSize.XXL, p.getSize());
+    }
+
+    @Test
+    void ProductSizeValue() {
+        Product p = new Product("Carpet", ProductColor.BLUE, ProductSize.XXL, 13.37, "TRY");
+        assertEquals("XXL", p.getSize().toString());
+    }
 }
